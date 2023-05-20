@@ -4,7 +4,7 @@ import json
 
 def get_openai(text, max_tokens = 100, n = 1, temperature = 0.1):
     try:
-        openai.api_key = "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"
+        openai.api_key = "SECRET"
         res = openai.Completion.create(model="text-davinci-003", prompt=text, n=n, max_tokens=max_tokens, temperature = temperature)
         print(res)
         answer = [i.text.lstrip().rstrip() for i in res['choices']]
