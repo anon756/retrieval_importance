@@ -21,8 +21,7 @@ fn main() {
 
 
     #[allow(non_snake_case)]
-    //for N in [1_000, 10_000, 100_000, 1_000_000] {
-    for N in [1_000_000] {
+    for N in [1_000, 10_000, 100_000, 1_000_000] {
         for (k, d) in [(10, 50), (20, 100)] {
             let all_retrieved: Vec<Retrieval> = (0..N)
                 .map(|_| {
